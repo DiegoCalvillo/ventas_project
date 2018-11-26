@@ -42,15 +42,6 @@
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active"><a href="{{ url('/') }}"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-						<li class="dropdown">
-            				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-list-alt"></span> Administrar Articulos <span class="caret"></span></a>
-            				<ul class="dropdown-menu">
-            				  <li><a href="{{ url('/categorias') }}">Categorias</a></li>
-            				  <li><a href="{{ url('/articulos') }}">Articulos</a></li>
-            				</ul>
-          				</li>
-          				<li><a href="{{ url('/clientes') }}"><span class="glyphicon glyphicon-user"></span> Clientes</a></li>
-          				<li><a href="{{ url('/ventas') }}"><span class="glyphicon glyphicon-usd"></span> Ventas</a></li>
             			<li class="dropdown">
               				<a href="#" style="color: red"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Usuario: {{ Auth::User()->name }} <span class="caret"></span></a>
                 			<ul class="dropdown-menu">
@@ -62,22 +53,6 @@
 			</div>
 		</div>
 	</div>
-	@yield('content_categorias')
-	@yield('content_categorias_registro')
-	@yield('content_categorias_perfil')
-	@yield('content_categorias_editar')
-	@yield('content_articulos')
-	@yield('content_articulos_registro')
-	@yield('content_articulos_perfil')
-	@yield('content_articulos_editar')
-	@yield('content_articulos_entrada_producto')
-	@yield('content_clientes')
-	@yield('content_clientes_registro')
-	@yield('content_clientes_perfil')
-	@yield('content_clientes_editar')
-	@yield('content_ventas')
-	@yield('content_ventas_registro')
-	@yield('content_ventas_perfil')
-	@yield('content_clientes_ventas_hechas')
+	@yield('content_index')
 </body>
 </html>

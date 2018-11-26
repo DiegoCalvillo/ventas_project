@@ -1,4 +1,4 @@
-@extends('layouts.menu')
+@extends('layouts.menu_for_index')
 
 @section('content_index')
 <leavel style="text-align: center;"><h1>Bienvenidos</h1></leavel>
